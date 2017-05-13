@@ -1,0 +1,160 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+.font-color {
+    color: #00c29d;
+}
+.bg-color {
+    background-color: #00c29f;
+}
+/*Structure of web - helpful clases*/
+.container {
+    width: 1062px;
+    margin: 0 auto;
+    /*padding ?*/
+}
+.col-2 {
+    width: 44%;
+    float: left;
+}
+.col-2:last-child {
+    margin-right: 11%;
+}
+.col-3 {
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+}
+.col-3:last-child {
+    margin-right: 0;
+}
+.col-irregular-2 {
+    width: 64%;
+    margin-right: 2%;
+    float: left;
+}
+.col-irregular-1 {
+    width: 34%;
+    margin-right: 2%;
+    float: left;
+}
+.col-irregular-2:last-child {
+    margin-right: 0;
+}
+.col-irregular-1:last-child {
+    margin
+}
+/*Main structure of web*/
+header {
+    line-height: 41px;
+    background-color: #000;
+}
+.logo {
+    text-align: left;
+    font-size: 15px;
+    /*line-height: 41px;*/
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.menu {
+    text-align: right;
+}
+.menu li{
+    display: inline-block;
+    color: white;
+    padding: 0 25px;
+}
+.menu li:last-child {
+    padding: 0;
+}
+.menu > li {
+    position: relative;
+}
+.menu > li:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    position: absolute;
+    left: -15%;
+    top: 41px;
+    display: block;
+    text-align: center;
+    display: none;
+}
+.dropdown-menu li {
+    width: 140px;
+    background-color: #000;
+}
+.dropdown-menu::before {
+    margin: 0 auto;
+    width: 15px;
+    display: block;
+    content: '';
+    border-bottom: 15px solid #000;
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+section#slaider {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,f7f7f7+57,e4e2e7+79,d1ced7+98,c5c7ce+100 */
+    background: #f7f7f7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f7f7f7 0%, #f7f7f7 57%, #e4e2e7 79%, #d1ced7 98%, #c5c7ce 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f7f7f7 0%,#f7f7f7 57%,#e4e2e7 79%,#d1ced7 98%,#c5c7ce 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f7f7f7 0%,#f7f7f7 57%,#e4e2e7 79%,#d1ced7 98%,#c5c7ce 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#c5c7ce',GradientType=0 ); /* IE6-9 */
+    height: 504px;
+}
+.slaider {
+    position: relative;
+}
+.slaider_image img {
+    max-width: none;
+    min-width: 590px;
+    margin-left: -37px;
+    margin-top: 69px;
+}
+.slaider_text {
+    padding: 126px 20px 75px 20px;
+    text-align: center;
+}
+.slaider_text h1 {
+    font-size: 42px;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.slaider_text p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+    padding: 35px 0 31px 0;
+}
+.title-font {
+    font-weight: 600;
+}
+.slaider button {
+    width: 264px;
+    height: 54px;
+    border-radius: 9px;
+    font-size: 25px;
+    border: 0;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+}
+.slaider_navigationleft {
+    position: absolute;
+    top: 209px;
+    left: 6px;
+    font-size: 78px;
+    font-weight: 300;
+}
+.slaider_navigationright {
+    position: absolute;
+    top: 209px;
+    right: 6px;
+    font-size: 78px;
+    font-weight: 300;
+}
