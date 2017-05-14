@@ -212,3 +212,104 @@ section#slaider {
 .article_title:hover .article_content { /*Dlaczego nie działa */
     display: block;
 }
+/*Section prices*/
+.bg-gray {
+    background-color: gray;
+}
+.price_list {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 30px;
+    width: 250px;
+}
+.box{
+    border: 2px solid #000;
+    height: 461px;
+    position:relative;
+    top: 40px;
+    text-align: center;
+}
+.box__circle{
+    width: 64px;
+    height: 64px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -32px;
+    top: -45px;
+    background-color: gray;
+}
+.box__dot {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -15px;
+    background-color: black;
+    border-radius: 50%;
+}
+.box h3 {
+    text-transform: uppercase;
+    padding: 40px 20px;
+    font-size: 20px;
+    color: white;
+}
+.box h4 {
+    font-size: 18px;
+}
+.price_circle {
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 1px solid #040506;
+    font-size: 40px;
+}
+.price_circle sup {
+    font-size: 16px;
+}
+.price_details {
+    padding: 30px 0;
+}
+.price_details li {
+    font-size: 18px;
+    line-height: 22px;
+    color: #040404;
+}
+.price_details li:nth-child(2n+1){
+    background-color: red;
+}
+.price_button {
+    padding: 8px 30px;
+    margin: 30px;
+    background-color: #00c29f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+/*footer*/
+footer .col-2 {
+    width: 50%;
+}
+footer .col-2:last-child {
+    margin-right: 0;
+}
+footer .row {
+    line-height: 100px;
+}
+.social-icon {
+    text-align: right;
+}
+.social-icon li {
+    display: inline-block;
+}
+.social-icon li:last-child {
+    padding: 0 0 0 50px;
+}
