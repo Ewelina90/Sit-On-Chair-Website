@@ -75,7 +75,6 @@
                             elit, sed do eiusmod.
                         </p>
                     </div>
-
                 </div>
                 <div class="col-3 article_two">
                     <img src="images/box2_img.jpg" alt="soffa">
@@ -116,13 +115,13 @@
             </div>
         </section>
 
-        <section id="prices">
-            <div class="container bg-gray">
-                <div class="price_list article_title--text">
-                    Cennik
+        <section id="prices" class="bg-gray">
+            <div class="container">
+                <div class="price_list">
+                    <h2>Cennik</h2>
                 </div>
                 <div class="row clearfix">
-                    <div class="col-3">
+                    <div class="col-3 clearfix">
                         <div class="box">
                             <div class="box__circle">
                                 <div class="box__dot"></div>
@@ -138,7 +137,7 @@
                             <button class="price_button">Dołącz</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 clearfix">
                         <div class="box">
                             <div class="box__circle">
                                 <div class="box__dot"></div>
@@ -155,7 +154,7 @@
                             <button class="price_button">Dołącz</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 clearfix">
                         <div class="box">
                             <div class="box__circle">
                                 <div class="box__dot"></div>
@@ -179,8 +178,8 @@
 
         <section id="contact">
             <div class="container">
-                <div class="price_list article_title--text">
-                    Kontakt
+                <div class="price_list">
+                    <h2>Kontakt</h2>
                 </div>
                 <div class="row clearfix">
                     <div class="col-irregular-2">
@@ -189,17 +188,19 @@
                                 <input type="text" name="first_name" placeholder="Imię">
                             </div>
                             <div class="email">
-                                <input type="email" name="email" value="" placeholder="email">
+                                <input type="email" name="email" value="" placeholder="Email">
                             </div>
                             <div class="message">
-                                <textarea name="message" rows="8" placeholder="Wiadomość"></textarea>
+                                <textarea name="message" rows="5" placeholder="Wiadomość"></textarea>
                             </div>
                         </form>
                     </div>
                     <div class="col-irregular-1">
-                        <img src="images/red_chair.png" alt="red chair">
-                        <input type="checkbox" name="checkbox" value="">
-                        <label for="checkbox">Zgadzam się na przetwarzanie danych osobowych</label>
+                        <img class="red_chair" src="images/red_chair.png" alt="red chair">
+                        <div class="checkbox clearfix">
+                            <input type="checkbox" name="checkbox" value="">
+                            <label for="checkbox">Zgadzam się na przetwarzanie danych osobowych</label>
+                        </div>
                         <button type="button" name="button">WYŚLIJ</button>
                     </div>
                 </div>
@@ -221,11 +222,8 @@
                             <li>SIT ON CHAIR</li>
                         </ul>
                     </div>
-
                 </div>
-
             </div>
-
         </footer>
     </body>
 </html>

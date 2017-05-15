@@ -172,6 +172,9 @@ section#slaider {
 /*.article_one img {
     position: relative;
 }*/
+#article .row {
+    padding: 50px 0 50px 0;
+}
 .article_title {
     position: absolute;
     left: 0;
@@ -214,31 +217,40 @@ section#slaider {
 }
 /*Section prices*/
 .bg-gray {
-    background-color: gray;
+    background-color: #f1f1f1;
+}
+#prices .col-3 {
+    height: 580px;
 }
 .price_list {
     text-transform: uppercase;
-    font-size: 24px;
-    margin: 30px;
-    width: 250px;
+    font-size: 21px;
+    padding-top: 40px;
+    width: 300px;
+    color: #5f5f5f;
+    line-height: 35px;
+    font-weight: 700;
+    border-bottom: 7px solid rgb(0, 197, 158);
 }
-.box{
-    border: 2px solid #000;
-    height: 461px;
+.box {
+    border: 2px solid #d4d4d4;
+    height: 518px;
     position:relative;
     top: 40px;
     text-align: center;
+    background-color: #f9f9f9;
+    margin-right: 9px;
 }
 .box__circle{
     width: 64px;
     height: 64px;
-    border: 2px solid #000;
+    border: 2px solid #d4d4d4;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     margin-left: -32px;
     top: -45px;
-    background-color: gray;
+    background-color: #ffffff;
 }
 .box__dot {
     width: 30px;
@@ -248,14 +260,15 @@ section#slaider {
     margin-left: -15px;
     top: 50%;
     margin-top: -15px;
-    background-color: black;
+    background-color: #c1c1c1;
     border-radius: 50%;
 }
 .box h3 {
     text-transform: uppercase;
-    padding: 40px 20px;
-    font-size: 20px;
-    color: white;
+    padding: 30px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #00cfab;
 }
 .box h4 {
     font-size: 18px;
@@ -266,35 +279,125 @@ section#slaider {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    border: 1px solid #040506;
-    font-size: 40px;
+    border: 2px solid #d4d4d4;
+    background-color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+    color: #c1c1c1;
 }
 .price_circle sup {
     font-size: 16px;
+    font-weight: 600;
+    color: #c1c1c1;
+}
+.price_circle h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #c1c1c1;
 }
 .price_details {
     padding: 30px 0;
 }
 .price_details li {
-    font-size: 18px;
-    line-height: 22px;
-    color: #040404;
+    font-size: 22px;
+    line-height: 42px;
 }
 .price_details li:nth-child(2n+1){
-    background-color: red;
+    background-color: #e3e3e3;
+    color: #8d8d8d;
+}
+.price_details li:nth-child(2n+2){
+    background-color: #f1f1f1;
+    color: #767676;
 }
 .price_button {
     padding: 8px 30px;
-    margin: 30px;
+    position: absolute;
+    bottom: 30px;
+    right: 28%;
     background-color: #00c29f;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     text-transform: uppercase;
+}
 
+/* Section Kontakt*/
+
+.contact_form input, textarea{
+    width: 95%;
+}
+.name, .email {
+    margin-bottom: 25px;
+}
+input, textarea {
+    line-height: 48px;
+    font-size: 37px;
+    border: 1px solid #92e8d3;
+    padding: 0 10px;
+}
+textarea {
+    resize: none;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #92e8d3;
+    color: #c2c2c2
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #c2c2c2;
+    font-weight: lighter;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #c2c2c2;
+    font-weight: 300;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #c2c2c2;
+    font-weight: 300;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #c2c2c2;
+    font-weight: 300;
+}
+.red_chair {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.checkbox {
+    padding: 30px 0;
+}
+.checkbox input, .checkbox label {
+    display: block;
+    float: left;
+}
+.checkbox label {
+    height: 40px;
+    width: 280px;
+    font-size: 19px;
+    color: #c2c2c2;
+}
+.checkbox input[type=checkbox] {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    border: 1px solid #92e8d3;
+    background-color: transparent;
+}
+#contact button {
+    width: 100%;
+    line-height: 72px;
+    border-radius: 10px;
+    background-color: #00c29f;
+    border: none;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
 }
 /*footer*/
+
 footer .col-2 {
     width: 50%;
 }
