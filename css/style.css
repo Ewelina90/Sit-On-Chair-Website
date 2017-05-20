@@ -1,6 +1,10 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 .font-color {
     color: #00c29d;
 }
@@ -71,11 +75,8 @@ header {
 .menu li:last-child {
     padding: 0;
 }
-.menu > li {
+.menu-item {
     position: relative;
-}
-.menu > li:hover .dropdown-menu {
-    display: block;
 }
 .dropdown-menu {
     position: absolute;
@@ -84,10 +85,12 @@ header {
     text-align: center;
     display: none;
     line-height: 35px;
+    z-index: 1;
 }
 .dropdown-menu li {
     width: 140px;
     background-color: #000;
+    display: block;
 }
 .dropdown-menu::before {
     margin: 0 auto;
@@ -99,6 +102,13 @@ header {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
 }
+.menu-item:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu li:hover {
+    background-color: #00c29f
+}
+
 section#slaider {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,f7f7f7+57,e4e2e7+79,d1ced7+98,c5c7ce+100 */
     background: #f7f7f7; /* Old browsers */
