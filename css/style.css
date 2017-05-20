@@ -58,11 +58,15 @@ header {
 }
 .logo {
     text-align: left;
-    font-size: 15px;
+    font-size: 14px;
     /*line-height: 41px;*/
     color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: 600;
+}
+.logo span {
+    font-weight: 700;
 }
 .menu {
     text-align: right;
@@ -70,7 +74,11 @@ header {
 .menu li{
     display: inline-block;
     color: white;
-    padding: 0 25px;
+    padding-right: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 .menu li:last-child {
     padding: 0;
@@ -80,7 +88,7 @@ header {
 }
 .dropdown-menu {
     position: absolute;
-    left: -15%;
+    left: -32%;
     top: 26px;
     text-align: center;
     display: none;
@@ -91,6 +99,11 @@ header {
     width: 140px;
     background-color: #000;
     display: block;
+    padding-right: 0;
+    font-size: 12px;
+}
+.dropdown-menu li:first-child {
+    padding-top: 5px;
 }
 .dropdown-menu::before {
     margin: 0 auto;
@@ -194,6 +207,7 @@ section#slaider {
     line-height: 60px;
     text-align: left;
     padding-left: 19px;
+    z-index: 10;
 }
 .article_title--text {
     padding-right: 10px;
@@ -210,21 +224,23 @@ section#slaider {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgb(249, 249, 249);
     text-align: left;
-    border: 1px solid rgba(0,0,0,0.9);
+    border: 1px solid rgba(0,0,0,0.3);
     /*poniższe właściwosci z .slaider p*/
     font-size: 14px;
     line-height: 21px;
-    color: #000;
-    padding: 23px 10px 23px 10px;
+    color: #575757;
+    padding: 23px 17px 23px 17px;
+    z-index: 100;
 }
 .article_content p {
     padding-top: 18px;
 }
-.article_title:hover .article_content { /*Dlaczego nie działa */
+.col-3:hover .article_content {
     display: block;
 }
+
 /*Section prices*/
 .bg-gray {
     background-color: #f1f1f1;
@@ -244,7 +260,7 @@ section#slaider {
 }
 .box {
     border: 2px solid #d4d4d4;
-    height: 518px;
+    height: 500px;
     position:relative;
     top: 40px;
     text-align: center;
@@ -252,30 +268,30 @@ section#slaider {
     margin-right: 9px;
 }
 .box__circle{
-    width: 64px;
-    height: 64px;
+    width: 57px;
+    height: 57px;
     border: 2px solid #d4d4d4;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     margin-left: -32px;
-    top: -45px;
+    top: -40px;
     background-color: #ffffff;
 }
 .box__dot {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     position: absolute;
     left: 50%;
-    margin-left: -15px;
+    margin-left: -13px;
     top: 50%;
-    margin-top: -15px;
+    margin-top: -13px;
     background-color: #c1c1c1;
     border-radius: 50%;
 }
 .box h3 {
     text-transform: uppercase;
-    padding: 30px 0;
+    padding: 25px 0;
     font-size: 24px;
     font-weight: 500;
     color: #00cfab;
@@ -321,34 +337,59 @@ section#slaider {
     color: #767676;
 }
 .price_button {
-    padding: 8px 30px;
+    /*padding: 7px 25px;*/
+    width: 124px;
+    height: 34px;
     position: absolute;
-    bottom: 30px;
+    bottom: 15px;
     right: 28%;
     background-color: #00c29f;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 10px;
+    font-size: 16px;
     text-transform: uppercase;
 }
-
+.col-3:hover .box, .col-3:hover .box__circle{
+    background-color: #00cfab;
+    border-color: #00cfab;
+}
+.col-3:hover .box__dot, .col-3:hover .price_button {
+    background-color: #f9f9f9;
+}
+.col-3:hover .price_button {
+    color: #00cfab;
+}
+.col-3:hover .price_circle {
+    color: #00cfab;
+    border-color: #00cfab;
+}
+.col-3:hover .price_circle sup {
+    color: #00cfab;
+}
+.col-3:hover .price_circle h4 {
+    color: #00cfab;
+}
+.col-3:hover .box h3 {
+    color: #f9f9f9;
+}
 /* Section Kontakt*/
 
 .contact_form input, textarea{
-    width: 95%;
+    width: 94%;
 }
 .name, .email {
     margin-bottom: 25px;
 }
 input, textarea {
-    line-height: 48px;
+    line-height: 64px;
     font-size: 37px;
     border: 1px solid #92e8d3;
     padding: 0 10px;
 }
 textarea {
     resize: none;
+    height: 185px;
 }
 input:focus, textarea:focus {
     outline: none;
@@ -373,11 +414,11 @@ input:focus, textarea:focus {
 }
 .red_chair {
     max-width: 100%;
-    margin: 0 auto;
+    margin: -25px auto 0 auto;
     display: block;
 }
 .checkbox {
-    padding: 30px 0;
+    padding: 32px 0;
 }
 .checkbox input, .checkbox label {
     display: block;
@@ -387,7 +428,7 @@ input:focus, textarea:focus {
     height: 40px;
     width: 280px;
     font-size: 19px;
-    color: #c2c2c2;
+    color: #989898;
 }
 .checkbox input[type=checkbox] {
     width: 45px;
@@ -423,6 +464,9 @@ footer .row {
 .social-icon li {
     display: inline-block;
 }
-.social-icon li:last-child {
-    padding: 0 0 0 50px;
+.social-icon .logo {
+    color: inherit;
+}
+.social-icon .font-color {
+    color: inherit;
 }
