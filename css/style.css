@@ -5,20 +5,21 @@ a {
     text-decoration: none;
     color: inherit;
 }
-.font-color {
+.accent-font-color {
     color: #00c29d;
 }
 .bg-color {
     background-color: #00c29f;
 }
-/*Structure of web - helpful clases*/
+
+/*===Structure of web===*/
+
 .container {
     width: 1062px;
     margin: 0 auto;
-    /*padding ?*/
 }
 .row {
-    padding: 30px 0 30px 0;
+    padding: 50px 0 50px 0;
 }
 .col-2 {
     width: 44%;
@@ -51,7 +52,9 @@ a {
 .col-irregular-1:last-child {
     margin-right: 0;
 }
-/*Main structure of web*/
+
+/*===Section Header===*/
+
 header {
     line-height: 41px;
     background-color: #000;
@@ -59,7 +62,6 @@ header {
 .logo {
     text-align: left;
     font-size: 14px;
-    /*line-height: 41px;*/
     color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -83,7 +85,7 @@ header {
 .menu li:last-child {
     padding: 0;
 }
-.menu-item {
+.menu_first-item {
     position: relative;
 }
 .dropdown-menu {
@@ -115,12 +117,14 @@ header {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
 }
-.menu-item:hover .dropdown-menu {
+.menu_first-item:hover .dropdown-menu {
     display: block;
 }
 .dropdown-menu li:hover {
     background-color: #00c29f
 }
+
+/*===Section Slaider===*/
 
 section#slaider {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,f7f7f7+57,e4e2e7+79,d1ced7+98,c5c7ce+100 */
@@ -134,13 +138,12 @@ section#slaider {
 .slaider {
     position: relative;
 }
-.slaider_image img {
+.slaider_image{
     max-width: none;
     min-width: 590px;
     margin-left: -37px;
     margin-top: 69px;
 }
-
 .slaider_text {
     padding: 126px 20px 75px 20px;
     text-align: center;
@@ -154,11 +157,11 @@ section#slaider {
 }
 .slaider_text p {
     font-size: 14px;
-    line-height: 21px;
-    color: #000;
+    line-height: 24px;
+    color: #484848;
     padding: 35px 0 31px 0;
 }
-.title-font {
+.accent-font-size {
     font-weight: 600;
 }
 .slaider button {
@@ -171,32 +174,30 @@ section#slaider {
     color: white;
     font-weight: 500;
 }
-.slaider_navigationleft {
+.slaider button:focus {
+    outline: none;
+    background-color: #01b796;
+}
+.slaider-navigation-left {
     position: absolute;
     top: 209px;
     left: 6px;
     font-size: 78px;
     font-weight: 300;
 }
-.slaider_navigationright {
+.slaider-navigation-right {
     position: absolute;
     top: 209px;
     right: 6px;
     font-size: 78px;
     font-weight: 300;
 }
-/*#article {
-    height: 500px;
-}*/
+
+/*===Section Articles===*/
+
 .article_one, .article_two, .article_three {
     text-align: center;
     position: relative;
-}
-/*.article_one img {
-    position: relative;
-}*/
-#article .row {
-    padding: 50px 0 50px 0;
 }
 .article_title {
     position: absolute;
@@ -209,7 +210,7 @@ section#slaider {
     padding-left: 19px;
     z-index: 10;
 }
-.article_title--text {
+.article_title-text {
     padding-right: 10px;
     font-size: 16px;
     color: #000;
@@ -227,7 +228,6 @@ section#slaider {
     background-color: #fff;
     text-align: left;
     border: 1px solid #d8d8d8;
-    /*poniższe właściwosci z .slaider p*/
     font-size: 14px;
     line-height: 21px;
     color: #575757;
@@ -241,8 +241,9 @@ section#slaider {
     display: block;
 }
 
-/*Section prices*/
-.bg-gray {
+/*===Section Price List===*/
+
+.bg-prices {
     background-color: #f1f1f1;
 }
 #prices .col-3 {
@@ -337,7 +338,6 @@ section#slaider {
     color: #767676;
 }
 .price_button {
-    /*padding: 7px 25px;*/
     width: 124px;
     height: 34px;
     position: absolute;
@@ -377,7 +377,8 @@ section#slaider {
     outline: none;
     background-color: #edfffc;
 }
-/* Section Kontakt*/
+
+/*===Section Contact===*/
 
 .contact_form input, textarea{
     width: 94%;
@@ -399,7 +400,7 @@ textarea {
 input:focus, textarea:focus {
     outline: none;
     border: 2px solid #92e8d3;
-    color: #c2c2c2
+    color: #c2c2c2;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #c2c2c2;
@@ -443,26 +444,23 @@ input:focus, textarea:focus {
     background: transparent;
 }
 .checkbox input[type="checkbox"]:before {
-  content: "\00a0";
-  display: inline-block;
-  /*margin: 0 .25em 0 0;*/
-  padding: 0;
-  vertical-align: top;
-  width: 45px;
-  height: 45px;
-  /*margin-right: 20px;*/
-  border: 1px solid #92e8d3;
-  background: #fff;
+   content: "\00a0";
+   display: inline-block;
+   padding: 0;
+   vertical-align: top;
+   width: 45px;
+   height: 45px;
+   border: 1px solid #92e8d3;
+   background: #fff;
 }
 .checkbox input[type="checkbox"]:checked:before {
-  background: #fff;
-  color: #92e8d3;
-  content: "\2713";
-  text-align: center;
-  font-size: 45px;
-  line-height: 43px;
+   background: #fff;
+   color: #92e8d3;
+   content: "\2713";
+   text-align: center;
+   font-size: 45px;
+   line-height: 43px;
 }
-
 #contact button {
     width: 100%;
     line-height: 72px;
@@ -473,7 +471,11 @@ input:focus, textarea:focus {
     color: white;
     font-weight: 600;
 }
-/*footer*/
+#contact button:focus {
+    outline: none;
+    background-color: #01b796;
+}
+/*===Section Footer===*/
 
 footer .col-2 {
     width: 50%;
@@ -482,6 +484,7 @@ footer .col-2:last-child {
     margin-right: 0;
 }
 footer .row {
+    padding: 30px 0 30px 0;
     line-height: 100px;
 }
 .copyright {
@@ -504,8 +507,4 @@ footer .row {
 }
 .social-icon .font-color {
     color: inherit;
-}
-button:focus {
-    outline: none;
-    background-color: #01b796;
 }
