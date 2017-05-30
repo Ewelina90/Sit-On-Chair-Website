@@ -117,9 +117,9 @@ header {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
 }
-.menu_first-item:hover .dropdown-menu {
+/*.menu_first-item:hover .dropdown-menu {
     display: block;
-}
+}*/
 .dropdown-menu li:hover {
     background-color: #00c29f
 }
@@ -209,6 +209,7 @@ section#slaider {
     text-align: left;
     padding-left: 19px;
     z-index: 10;
+    display: block;
 }
 .article_title-text {
     padding-right: 10px;
@@ -237,9 +238,9 @@ section#slaider {
 .article_content p {
     padding-top: 18px;
 }
-.col-3:hover .article_content {
+/*.col-3:hover .article_content {
     display: block;
-}
+}*/
 
 /*===Section Price List===*/
 
