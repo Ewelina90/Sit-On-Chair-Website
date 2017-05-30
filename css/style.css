@@ -192,7 +192,9 @@ section#slaider {
     font-size: 78px;
     font-weight: 300;
 }
-
+.invisible {
+    display: none;
+}
 /*===Section Articles===*/
 
 .article_one, .article_two, .article_three {
