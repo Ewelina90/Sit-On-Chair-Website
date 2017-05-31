@@ -48,6 +48,4 @@ document.addEventListener("DOMContentLoaded",function(){
         slaiderImages[currentImg].classList.add('slaider_image')
 
     });
-
-
 });
